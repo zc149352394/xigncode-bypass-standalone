@@ -1,0 +1,7 @@
+build
+node_modules
+*sublime*
+npm-debug.log
+lib
+.vscode
+.idea
