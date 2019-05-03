@@ -54,11 +54,11 @@ Xigncode-Bypass-Standalone运行时, 监听系统进程
 
 新增TERA.exe进程时 备份且替换 [x3.xem] -> [x3.xem.bak] , [xcorona.xem] -> [xcorona.xem.bak]
 
-![DPS](https://github.com/zc149352394/xigncode-bypass-standalone/blob/master/screenshot/01.png)
+![screenshot](https://github.com/zc149352394/xigncode-bypass-standalone/blob/master/screenshot/01.png)
 
 移除TERA.exe进程时 删除且恢复 [x3.xem] <- [x3.xem.bak] , [xcorona.xem] <- [xcorona.xem.bak]
 
-![DPS](https://github.com/zc149352394/xigncode-bypass-standalone/blob/master/screenshot/02.png)
+![screenshot](https://github.com/zc149352394/xigncode-bypass-standalone/blob/master/screenshot/02.png)
 
 # 修复bug:
 
