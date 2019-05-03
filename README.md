@@ -1,6 +1,6 @@
 # xigncode-bypass for TERA by Caali
 
-Standalone version. It is recommended to use the version with proxy integration instead, because it will be automatically updated. FAQ, help, etc. here: https://discord.gg/maqBmJV 
+Standalone version. It is recommended to use the version with proxy integration instead, because it will be automatically updated. FAQ, help, etc. here: https://discord.gg/dUNDDtw
 
 # Installation
 
@@ -18,15 +18,23 @@ Standalone version. It is recommended to use the version with proxy integration 
 
 > 3).After closing the game client, close the bypass
 
-------
-
 # xigncode-bypass 单独运行版
 
-无需运行 TERA Proxy
+无需 TERA-Proxy 运行
 
 # 安装说明
 
-> 1).将所有内容提取到 非中文 空文件夹 中
+> 0).建议删除客户端 \TERA\Binaries\XIGNCODE 中垃圾文件避免自动上传, 仅需保留以下4个文件即可
+
+- x3.xem
+
+- xcorona.xem
+
+- xcorona_x64.xem
+
+- xnina.xem
+
+> 1).建议将此代码库中所有内容提取到 非中文 文件夹中
 
 > 2).确保您的系统上安装了最新版本的 Noode.js(v11.4 以上) (https://nodejs.org/en/download/current/)
 
@@ -34,8 +42,30 @@ Standalone version. It is recommended to use the version with proxy integration 
 
 # 使用说明
 
-> 1).以管理员身份运行'xigncodebypass.bat'，并使其保持运行状态
+> 1).以管理员身份运行'XigncodeBypassSandalone.bat'，并使其保持运行状态
 
 > 2).运行 TERA Online 游戏客户端
 
 > 3).直到 TERA Online 正常关闭游戏客户端后, 再关闭 Xigncode-Bypass-Standalone
+
+# 工作原理
+
+Xigncode-Bypass-Standalone运行时, 监听系统进程
+
+新增TERA.exe进程时 备份且替换 [x3.xem] -> [x3.xem.bak] , [xcorona.xem] -> [xcorona.xem.bak]
+
+![DPS](https://github.com/zc149352394/xigncode-bypass-standalone/blob/master/screenshot/01.png)
+
+移除TERA.exe进程时 删除且恢复 [x3.xem] <- [x3.xem.bak] , [xcorona.xem] <- [xcorona.xem.bak]
+
+![DPS](https://github.com/zc149352394/xigncode-bypass-standalone/blob/master/screenshot/02.png)
+
+# 修复bug:
+
+增加对[*.bak]文件, 是否存在的判定从而解决
+
+当存在TERA.exe进程时(即已经启动了TERA游戏)
+
+第2次启动[Bypass]会造成重复备份[*.bak]
+
+最终导致[结束TERA]时恢复错误的[*.bak]数据
