@@ -18,9 +18,9 @@ Standalone version. It is recommended to use the version with proxy integration 
 
 > 3).After closing the game client, close the bypass
 
-# xigncode-bypass 单独运行版
+# xigncode-bypass 独立运行版
 
-无需 TERA-Proxy 运行
+无需运行TERA-Proxy环境 依旧实现 bypass
 
 # 安装说明
 
@@ -34,7 +34,7 @@ Standalone version. It is recommended to use the version with proxy integration 
 
 - xnina.xem
 
-> 1).建议将此代码库中所有内容提取到 非中文 文件夹中
+> 1).建议将此代码库中所有内容提取到 非中文 路径
 
 > 2).确保您的系统上安装了最新版本的 Noode.js(v11.4 以上) (https://nodejs.org/en/download/current/)
 
@@ -50,13 +50,13 @@ Standalone version. It is recommended to use the version with proxy integration 
 
 # 工作原理
 
-Xigncode-Bypass-Standalone运行时, 监听系统进程
+在Xigncode-Bypass-Standalone运行时, 监听Windows全部进程间隔500ms(config.json中可修改)
 
-新增TERA.exe进程时 备份且替换 [x3.xem] -> [x3.xem.bak] , [xcorona.xem] -> [xcorona.xem.bak]
+扫描到新增TERA.exe进程时, 备份且替换 [x3.xem] -> [x3.xem.bak] , [xcorona.xem] -> [xcorona.xem.bak]
 
 ![screenshot](https://github.com/zc149352394/xigncode-bypass-standalone/blob/master/screenshot/01.png)
 
-移除TERA.exe进程时 删除且恢复 [x3.xem] <- [x3.xem.bak] , [xcorona.xem] <- [xcorona.xem.bak]
+扫描到移除TERA.exe进程时, 删除且恢复 [x3.xem] <- [x3.xem.bak] , [xcorona.xem] <- [xcorona.xem.bak]
 
 ![screenshot](https://github.com/zc149352394/xigncode-bypass-standalone/blob/master/screenshot/02.png)
 
