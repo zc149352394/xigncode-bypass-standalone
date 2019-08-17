@@ -24,7 +24,7 @@ Standalone version. It is recommended to use the version with proxy integration 
 
 # 安装说明
 
-> 0).建议删除客户端 \TERA\Binaries\XIGNCODE 中垃圾文件避免自动上传, 仅需保留以下4个文件即可
+> 0).请删除客户端 \TERA\Binaries\XIGNCODE 中"垃圾文件"避免自动上传, 仅需保留以下4个文件即可
 
 - x3.xem
 
@@ -69,3 +69,14 @@ Standalone version. It is recommended to use the version with proxy integration 
 第2次启动[Bypass]会造成重复备份[*.bak]
 
 最终导致[结束TERA]时恢复错误的[*.bak]数据
+
+# 更新支持版本:
+
+- Node.js 11.4.0 到 11.15.0 (NODE_MODULE_VERSION: x32_67 x64_67)
+
+- Node.js 12.0.0 到 12.8.1 (NODE_MODULE_VERSION: x32_72 x64_72)
+
+- Electron v4.0 到 4.2.9 (NODE_MODULE_VERSION: x32_64 x64_64)
+
+- Electron v5.0 到 5.0.9 (NODE_MODULE_VERSION: x32_70 x64_70)
+
