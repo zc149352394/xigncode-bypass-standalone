@@ -3,7 +3,6 @@
 const fs = require("fs");
 const path = require("path");
 const ProcessListener = require("./process-listener");
-const scan_interval = require('./config.json');
 
 let PatchedProcesses = {};
 
@@ -43,7 +42,7 @@ function HandleRemovedProcess(pid) {
     }
 }
 
-ProcessListener("TERA.exe", HandleAddedProcess, HandleRemovedProcess, scan_interval);
+ProcessListener("TERA.exe", HandleAddedProcess, HandleRemovedProcess, 500);
 console.log("[bypass] Ready, waiting for game client to be started!");
 
 try {
