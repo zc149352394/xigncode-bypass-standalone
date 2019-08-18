@@ -50,7 +50,7 @@ Standalone version. It is recommended to use the version with proxy integration 
 
 # 工作原理
 
-在Xigncode-Bypass-Standalone运行时, 监听Windows全部进程间隔500ms(config.json中可修改)
+在Xigncode-Bypass-Standalone运行时, 监听系统后台进程间隔500ms
 
 扫描到新增TERA.exe进程时, 备份且替换 [x3.xem] -> [x3.xem.bak] , [xcorona.xem] -> [xcorona.xem.bak]
 
