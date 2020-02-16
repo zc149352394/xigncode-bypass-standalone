@@ -72,7 +72,7 @@ Standalone version. It is recommended to use the version with proxy integration 
 
 # 更新支持版本:
 
-~~Node.js v10 + (NODE_MODULE_VERSION: x32_64 x64_64)
+~~Node.js v10 + (NODE_MODULE_VERSION: x32_64 x64_64)~~
 
 - Node.js v11 + (NODE_MODULE_VERSION: x32_67 x64_67)
 
